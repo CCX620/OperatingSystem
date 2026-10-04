@@ -315,8 +315,8 @@ cat hello.txt
  |
 | 软件是否全部安装合格 |是 |
 
-![软件安装与 vim 写文件](imgs/lab1_toolchain.png)
----
+![软件安装与 vim 写文件]
+---![alt text](Lab1_toolchain.png)
 
 ## 环境验收总结
 
