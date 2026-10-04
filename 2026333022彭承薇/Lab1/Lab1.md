@@ -27,7 +27,7 @@ VMware Workstation Pro 26H1 for Windows
 | 已安装的 VMware 完整版本号 |VMware® Workstation Pro 26H 126.0.0.25388281 |
 | 是否为教师指定版本 |是 |
 
-![VMware 版本](imgs/lab1_vmware_version.png)
+![VMware 版本](imgs/Lab1_vmware_version.png)
 
 ---
 
@@ -67,7 +67,7 @@ sudo cat /var/log/installer/media-info
  |
 | 是否为教师提供的 Ubuntu 24.04.4 LTS Desktop amd64 |是 |
 
-![Ubuntu 版本](imgs/lab1_ubuntu_version.png)
+![Ubuntu 版本](imgs/Lab1_ubuntu_version.png)
 ---
 
 ## 任务三：检查虚拟机联网
@@ -131,7 +131,7 @@ sudo apt update
 | `sudo apt update` 是否成功 |是 |
 | 联网是否合格 |是 |
 
-![虚拟机联网](imgs/lab1_network.png)
+![虚拟机联网](imgs/Lab1_network.png)
 ---
 
 ## 任务四：检查 CPU、内存和存储分配
@@ -180,7 +180,7 @@ df -h /
 | 根分区可用空间 |28G |
 | 资源分配是否符合对应档位 |是 |
 
-![虚机资源](imgs/lab1_resources.png)
+![虚机资源](imgs/Lab1_resources.png)
 ---
 
 ## 任务五：检查软件安装并用 vim 编写文件
@@ -315,7 +315,7 @@ cat hello.txt
  |
 | 软件是否全部安装合格 |是 |
 
-![软件安装与 vim 写文件](imgs/lab1_toolchain.png)
+![软件安装与 vim 写文件](imgs/Lab1_toolchain.png)
 ---
 
 ## 环境验收总结
