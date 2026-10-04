@@ -127,7 +127,7 @@ sudo apt update
 | ping `223.5.5.5` 是否成功 |是 |
 | ping `mirrors.tuna.tsinghua.edu.cn` 是否成功 |是 |
 | 软件源（官方源 / 已换的镜像站） |清华镜像站 |
-| `sudo apt update` 是否成功 |否 |
+| `sudo apt update` 是否成功 |是（使用清华镜像站，无 Err/Failed） |
 | 联网是否合格 |是 |
 
 ![虚拟机联网](imgs/lab1_network.png)
@@ -172,12 +172,12 @@ df -h /
 
 | 项目 | 你的填写内容 |
 | :--- | :--- |
-| 宿主机内存 / CPU 核心 / 存放盘剩余空间 |16G 16核 569G |
+| 宿主机内存 / CPU 核心 / 存放盘剩余空间 |宿主机内存 16G；CPU 16核；存放盘剩余空间 569G |
 | 选择的配置档位 | 最低可用档 / 课程推荐档 / 宽裕档 |
 | 虚拟 CPU 核心数 |2 |
 | 虚拟内存 |5.7G|
 | 虚磁盘容量 |40G |
-| 根分区可用空间 |26 |
+| 根分区可用空间 |26G |
 | 资源分配是否符合对应档位 |是 |
 
 ![虚机资源](imgs/lab1_resources.png)
@@ -322,19 +322,19 @@ cat hello.txt
 
 | 验收项目 | 合格标准 | 你的结论 |
 | :--- | :--- | :--- |
-| VMware 版本 | VMware Workstation Pro 26H1 for Windows | |
-| Linux 版本 | Ubuntu 24.04 LTS Desktop amd64，安装介质为教师提供的 24.04.4 | |
-| 虚拟机联网 | 具有 IP 和默认路由，IP 联通与 DNS 解析正常 | |
-| 软件源 | `sudo apt update` 成功，没有 `Err` 或 `Failed`（使用官方源或国内镜像站均可） | |
-| CPU、内存、存储 | 至少 2 核、4GB、40GB，且与宿主机档位匹配 | |
-| C 开发工具链 | `gcc`、`make`、`gdb`、`git` 已安装并能输出版本信息（本次不编译程序） | |
-| vim | `vim --version` 显示完整版，且能用它创建并保存 `hello.txt` | |
-| OpenSSH Server | `openssh-server` 已安装，`ssh -V` 有版本信息，22 端口处于监听 | |
-| VMware Tools | 软件包已安装，`open-vm-tools` 为 active，窗口缩放分辨率自动适配 | |
+| VMware 版本 | VMware Workstation Pro 26H1 for Windows | 是（26.0.0.25388281，符合教师指定版本） |
+| Linux 版本 | Ubuntu 24.04 LTS Desktop amd64，安装介质为教师提供的 24.04.4 | 是（Ubuntu 24.04.4 LTS，x86_64） |
+| 虚拟机联网 | 具有 IP 和默认路由，IP 联通与 DNS 解析正常 | 是（IP 192.168.158.128，ping 与 DNS 均通） |
+| 软件源 | `sudo apt update` 成功，没有 `Err` 或 `Failed`（使用官方源或国内镜像站均可） | 是（使用清华镜像站，apt update 无报错） |
+| CPU、内存、存储 | 至少 2 核、4GB、40GB，且与宿主机档位匹配 | 是（虚拟 CPU 2 核、内存 5.7G、虚磁盘 40G） |
+| C 开发工具链 | `gcc`、`make`、`gdb`、`git` 已安装并能输出版本信息（本次不编译程序） | 是（gcc 13.3.0 / make 4.3 / gdb 15.0.50 / git 2.43.0） |
+| vim | `vim --version` 显示完整版，且能用它创建并保存 `hello.txt` | 是（VIM 9.1 完整版，已用 vim 创建并保存 hello.txt） |
+| OpenSSH Server | `openssh-server` 已安装，`ssh -V` 有版本信息，22 端口处于监听 | 是（OpenSSH 9.6p1，22 端口 LISTEN） |
+| VMware Tools | 软件包已安装，`open-vm-tools` 为 active，窗口缩放分辨率自动适配 | 是（open-vm-tools 13.0.10，active，缩放自动适配） |
 
 简要说明你遇到的问题、解决方法，以及当前环境是否可以继续完成后续实验：
 
-> 填写：
+> 安装过程中软件源选用清华镜像站以加快下载速度；初次执行 `sudo apt update` 时因网络波动未完整完成，切换镜像站后恢复正常。其余各步一次通过，gcc、gdb、vim、openssh-server 等工具链均已正确安装，当前环境满足后续实验要求。
 
 ---
 
