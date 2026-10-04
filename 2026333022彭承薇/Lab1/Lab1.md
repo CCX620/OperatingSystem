@@ -68,7 +68,6 @@ sudo cat /var/log/installer/media-info
 | 是否为教师提供的 Ubuntu 24.04.4 LTS Desktop amd64 |是 |
 
 ![Ubuntu 版本](imgs/lab1_ubuntu_version.png)
-![alt text](image.png)
 ---
 
 ## 任务三：检查虚拟机联网
@@ -133,7 +132,6 @@ sudo apt update
 | 联网是否合格 |是 |
 
 ![虚拟机联网](imgs/lab1_network.png)
-![alt text](<屏幕截图 2026-10-02 214449.png>)
 ---
 
 ## 任务四：检查 CPU、内存和存储分配
@@ -183,7 +181,6 @@ df -h /
 | 资源分配是否符合对应档位 |是 |
 
 ![虚机资源](imgs/lab1_resources.png)
-![alt text](<屏幕截图 2026-10-03 125353.png>)
 ---
 
 ## 任务五：检查软件安装并用 vim 编写文件
@@ -319,7 +316,6 @@ cat hello.txt
 | 软件是否全部安装合格 |是 |
 
 ![软件安装与 vim 写文件](imgs/lab1_toolchain.png)
-![alt text](image.png)
 ---
 
 ## 环境验收总结
